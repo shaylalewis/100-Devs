@@ -13,6 +13,7 @@
 h1,
 h2 {
   text-align: center;
+  color: #e4620d;
 }
 body {
   display: flex;
@@ -56,6 +57,7 @@ header {
 
 .remote {
   margin-top: 20px;
+  margin-left: 27px;
 }
 
 .remote button {
