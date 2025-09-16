@@ -1,0 +1,82 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1,
+h2 {
+  text-align: center;
+}
+body {
+  display: flex;
+  flex-direction: column; /* stack header, tv, and remote */
+  align-items: center; /* center everything horizontally */
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  margin: 20px 0;
+}
+
+.tv-container {
+  position: relative;
+  width: 600px; /* adjust to your TV image */
+}
+
+.tv-frame {
+  width: 100%;
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+
+.tv-screen {
+  position: absolute;
+  top: 20%; /* adjust to fit your TV image */
+  left: 6%;
+  width: 70%;
+  height: 55%;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.tv-screen iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.remote {
+  margin-top: 20px;
+}
+
+.remote button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#purple {
+  background: rgba(241, 63, 247, 1);
+}
+#green {
+  background: rgba(0, 253, 81, 1);
+}
+#blue {
+  background: rgba(0, 254, 255);
+}
+#orange {
+  background: rgba(255, 173, 0);
+}
