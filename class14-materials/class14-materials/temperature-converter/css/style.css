@@ -3,16 +3,39 @@
 /*******************************************/
 
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+body {
+  padding: 5%;
+}
 
+button {
+  margin-top: 2%;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 50%;
+  border: 0;
+}
 
+input {
+  border-radius: 5px;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+h2 {
+  font-size: 35px;
+  color: #fc4c24;
+}
